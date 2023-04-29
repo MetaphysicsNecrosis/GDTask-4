@@ -15,7 +15,7 @@ namespace GDTask_4
         }
         static public String Coder(String s, int m)
         {
-            return String.Join("", (s.ToCharArray().Select(n => Coder(n, 5))).ToArray());
+            return String.Join("", (s.ToCharArray().Select(n => Coder(n, m))).ToArray());
         }
     }
     internal class Program
